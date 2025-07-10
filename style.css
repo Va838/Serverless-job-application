@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #e9eff6; /* Lighter, softer background */
+}
+
+.header {
+	background: linear-gradient(90deg, #004085 0%, #007bff 100%); /* Deeper blue gradient */
+	color: #fff;
+	padding: 40px 0 25px 0; /* More vertical padding */
+	text-align: center;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Stronger, softer shadow */
+}
+
+.header h1 {
+    font-size: 2.8em; /* Larger heading */
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.form-container {
+	margin: 40px auto; /* More margin */
+	width: 100%;
+	max-width: 580px; /* Slightly wider form */
+	background: #fff;
+	border-radius: 16px; /* More rounded corners */
+	box-shadow: 0 6px 30px rgba(0,0,0,0.12); /* Enhanced shadow */
+	padding: 40px; /* More padding inside form */
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+h2 {
+	margin-bottom: 25px;
+	color: #004085; /* Matches header's deeper blue */
+	text-align: center;
+	font-size: 2em;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	width: 100%;
+}
+
+label {
+	font-weight: 600;
+	margin-bottom: 8px; /* Slightly more space */
+	color: #333; /* Darker text for better contrast */
+	font-size: 0.95em;
+}
+  
+input, textarea {
+	margin-bottom: 22px; /* More space between fields */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	padding: 14px; /* More padding */
+	border: 1.5px solid #a8c1e3; /* Softer border color */
+	border-radius: 8px; /* More rounded input fields */
+	width: 100%;
+	font-size: 17px; /* Slightly larger font */
+	background: #fdfefe; /* Very light background for inputs */
+	transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 1.5px solid #007bff; /* Brighter blue on focus */
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle glowing effect on focus */
+}
+
+input[type="file"] {
+	margin-top: 8px;
+	margin-bottom: 22px;
+	font-size: 0.95em;
+}
+
+button[type="submit"], input[type="submit"] {
+	background: linear-gradient(90deg, #007bff 0%, #00c7e0 100%); /* Brighter, more vibrant gradient */
+	color: #fff;
+	padding: 14px 0; /* More padding */
+	border: none;
+	border-radius: 8px; /* More rounded button */
+	cursor: pointer;
+	font-size: 19px; /* Larger font */
+	font-weight: 700; /* Bolder text */
+	transition: background 0.3s ease-in-out, transform 0.1s ease-in-out; /* Smooth transitions */
+	margin-top: 15px; /* More space above button */
+    letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover, input[type="submit"]:hover {
+	background: linear-gradient(90deg, #0056b3 0%, #009db3 100%); /* Darker gradient on hover */
+    transform: translateY(-1px); /* Slight lift effect on hover */
+}
+
+button[type="submit"]:active, input[type="submit"]:active {
+    transform: translateY(0); /* Reset on click */
+}
+
+#submitmessage {
+	color: #28a745; /* Bootstrap-like green for success */
+	margin-top: 15px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.1em;
+}
+
+.footer {
+	background-color: #343a40; /* Darker, more modern footer background */
+	color: #e9ecef; /* Lighter text for contrast */
+	padding: 25px; /* More padding */
+	text-align: center;
+	margin-top: 50px; /* More space above footer */
+	border-radius: 0 0 16px 16px; /* Matches form container's border-radius */
+	font-size: 1em;
+	letter-spacing: 0.7px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+	.form-container {
+		padding: 25px 15px 20px 15px; /* Adjust padding for smaller screens */
+		margin: 20px auto;
+	}
+
+    .header {
+        padding: 30px 0 15px 0;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .header p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"], input[type="submit"] {
+        font-size: 17px;
+        padding: 12px 0;
+    }
+}
