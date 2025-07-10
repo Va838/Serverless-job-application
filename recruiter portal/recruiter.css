@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fa; /* Matches Applicant Portal's background */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: linear-gradient(90deg, #005bea 0%, #3ec6e0 100%); /* Matches Applicant Portal's header gradient */
+    color: #fff;
+    padding: 32px 0 20px 0; /* Matches Applicant Portal's header padding */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Matches Applicant Portal's header shadow */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    font-weight: 600; /* Slightly bolder for consistency */
+}
+
+#refreshBtn {
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    background: linear-gradient(90deg, #005bea 0%, #3ec6e0 100%); /* Matches main button gradient from Applicant Portal */
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 1em;
+    border-radius: 6px; /* Matches button border-radius from Applicant Portal */
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: 600;
+}
+
+#refreshBtn:hover {
+    background: linear-gradient(90deg, #004bb5 0%, #2fa7c7 100%); /* Matches button hover from Applicant Portal */
+}
+
+#applications-container {
+    margin: 32px auto; /* Matches Applicant Portal's form container margin */
+    width: 90%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 12px; /* Matches Applicant Portal's form container border-radius */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08); /* Matches Applicant Portal's form container shadow */
+    padding: 30px 20px;
+}
+
+#applications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+#applications-table th, #applications-table td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: left;
+}
+
+#applications-table th {
+    background: #f8fbff; /* A very light blue, close to input background in Applicant Portal */
+    color: #222; /* Darker text for better contrast, similar to label color */
+    font-weight: 600;
+}
+
+#applications-table tbody tr:hover {
+    background: #f9fafb; /* Gentle hover effect */
+}
+
+#applications-table a {
+    color: #005bea; /* Matches the primary blue from Applicant Portal */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#applications-table a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #222; /* Matches Applicant Portal's footer background */
+    color: #fff; /* Matches Applicant Portal's footer text color */
+    padding: 20px; /* Matches Applicant Portal's footer padding */
+    text-align: center;
+    margin-top: 40px; /* Matches Applicant Portal's footer margin-top */
+    border-radius: 0 0 12px 12px; /* Matches Applicant Portal's footer border-radius */
+    font-size: 15px; /* Matches Applicant Portal's footer font-size */
+    letter-spacing: 0.5px; /* Matches Applicant Portal's footer letter-spacing */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header {
+        padding: 20px 0;
+    }
+    .header h1 {
+        font-size: 2em;
+    }
+    #refreshBtn {
+        position: static;
+        display: block;
+        width: fit-content;
+        margin: 15px auto 0 auto;
+    }
+    #applications-container {
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+    #applications-table th, #applications-table td {
+        padding: 10px 5px;
+        font-size: 0.9em;
+    }
+}
