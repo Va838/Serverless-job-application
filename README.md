@@ -4,7 +4,7 @@
 
 A serverless job application portal built with:
 
-- **Frontend:** HTML, CSS, JavaScript (static hosting on Amazon S3)
+- **Frontend:** HTML, CSS(static hosting on Amazon S3)
 - **Backend:** AWS Lambda (Python), API Gateway, DynamoDB, and S3
 
 ## Features
@@ -34,7 +34,7 @@ A serverless job application portal built with:
 
 ## Configuration
 
-- Update the API endpoint URLs in the frontend JavaScript as needed.
+- Update the API endpoint URLs in the frontend HTML as needed.
 - To change the S3 bucket for resumes, update the `bucketName` variable in the recruiter portal JavaScript file.
 
 ## Deployment
